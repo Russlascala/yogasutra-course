@@ -1,0 +1,223 @@
+/* Sticky header bar */
+.site-header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222;
+  padding: 1rem 1rem;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* CTA button style */
+.cta-button {
+  background-color: #b22222;  /* deep red, fits the lotus/yoga theme */
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #8b1a1a;
+}
+
+/* Prevent overlap with sticky header */
+body {
+  margin: 0;
+  padding-top: 50px; /* same height as header */
+}
+
+/* Banner image */
+.banner {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.banner-section{
+    margin-top: 57px;
+}
+
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #222;
+  background: #fafafa;
+}
+
+header .banner {
+  width: 100%;
+  display: block;
+}
+.banner {
+  display: block;
+  max-width: 1000px;  /* adjust as needed */
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* Two-column layout */
+.two-col {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: flex-start;
+}
+
+.two-col .col {
+  flex: 1 1 300px; /* shrink/grow with min width */
+}
+
+.two-col .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.two-col .image img:hover {
+  transform: scale(1.02);
+}
+
+/* Mobile stacks columns */
+@media (max-width: 768px) {
+  .two-col {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #222;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #b22222;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.cta:hover {
+  background: #8b1a1a;
+}
+
+.teacher {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.teacher-photo {
+  max-width: 250px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.visuals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.image-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+/* FAQ Section */
+#faq {
+  padding: 3rem 1.5rem;
+  background: #fafafa;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+#faq h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.faq-question {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem;
+  background: #222;
+  color: white;
+}
+footer a {
+  color: #f4a261;
+  text-decoration: none;
+}
+
