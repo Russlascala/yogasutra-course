@@ -1,15 +1,43 @@
 /* Sticky header bar */
+/* Sticky header */
 .site-header.sticky {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #222;
-  padding: 1rem 1rem;
-  text-align: center;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  background: #222;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+  overflow-x: hidden; /* prevent horizontal scroll bleed */
 }
+
+/* Header container */
+.header-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem;       /* reduced padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; /* makes padding included in width */
+}
+
+/* CTA button */
+.header-container .cta-button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background: #b12a2a;
+  border-radius: 6px;
+  transition: background .25s ease;
+  max-width: 100%; /* stops it from overflowing */
+  white-space: nowrap; /* keeps text on one line */
+}
+
+.header-container .cta-button:hover {
+  background: #8e2020;
+}
+
 
 /* CTA button style */
 .cta-button {
