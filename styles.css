@@ -13,7 +13,7 @@
 .header-container {
   width: 100%;
   margin: 0 auto;
-  padding: 0.5rem;       /* reduced padding */
+  padding: 1rem;       /* reduced padding */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +71,7 @@ body {
 }
 
 .banner-section{
-    margin-top: 57px;
+    margin-top: 15px;
 }
 
 
